@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0b685f63.chunk.css",
+    "main.js": "/static/js/main.ff600cfd.chunk.js",
+    "main.js.map": "/static/js/main.ff600cfd.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/css/2.858b5ee9.chunk.css": "/static/css/2.858b5ee9.chunk.css",
+    "static/js/2.ad5d4dcd.chunk.js": "/static/js/2.ad5d4dcd.chunk.js",
+    "static/js/2.ad5d4dcd.chunk.js.map": "/static/js/2.ad5d4dcd.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.4851083de49c5014cd388c0689d9c70b.js": "/precache-manifest.4851083de49c5014cd388c0689d9c70b.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.858b5ee9.chunk.css.map": "/static/css/2.858b5ee9.chunk.css.map",
+    "static/css/main.0b685f63.chunk.css.map": "/static/css/main.0b685f63.chunk.css.map",
+    "static/media/Green.png": "/static/media/Green.86ceb940.png",
+    "static/media/Recycling.png": "/static/media/Recycling.e6bbfeec.png",
+    "static/media/Skyline.png": "/static/media/Skyline.3e468806.png",
+    "static/media/air.jpg": "/static/media/air.4577b225.jpg",
+    "static/media/bellota.jpg": "/static/media/bellota.a977040b.jpg",
+    "static/media/river.jpg": "/static/media/river.99a37a63.jpg",
+    "static/media/smile.jpg": "/static/media/smile.ea91bf09.jpg"
+  }
+}

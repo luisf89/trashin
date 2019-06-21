@@ -6,7 +6,7 @@
     "start": "node ./bin/www",
     "dev": "DEBUG=todos-back:* nodemon ./bin/www",
     "dev-windows": "nodemon ./bin/www",
-    "deploy": "cd .. && git subtree push --prefix trashin-front heroku master"
+    "deploy": "cd .. && git subtree push --prefix trashin-back heroku master"
   },
   "dependencies": {
     "bcrypt": "^3.0.6",

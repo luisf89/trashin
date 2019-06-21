@@ -1,5 +1,4 @@
 import React from 'react';
-import { Switch, Route } from 'react-router'
 import Router from './Router.js'
 import './App.css';
 

@@ -1,6 +1,22 @@
-import React, {Component} from 'react';
-import AuthForm from './AuthForm';
+import React, {Component, useState} from 'react';
 import {login, register} from '../../services/auth';
+import { Link } from "react-router-dom";
+
+function AuthForm() {
+    const [user, setUser] = useState({})
+    
+    const handleChange = (event) => {
+        const { target } = event;
+        const { name, value } = target;
+        setUser({[name]: value,})
+
+    }
+    const hanldeClick = (event) => {
+        event.preventDefault();
+        console.log('el click')
+        console.log('>>>>>>>',user)
+    }
+}
 
 class AuthFormContainer extends Component{
 

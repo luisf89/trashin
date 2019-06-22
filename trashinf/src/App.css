@@ -7,6 +7,11 @@
   height: 40vmin;
   pointer-events: none;
 }
+/* font-family: 'Courgette', cursive;
+font-family: 'Patrick Hand', cursive;
+font-family: 'Rock Salt', cursive;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Indie Flower', cursive; */
 
 .App-header {
   background-color: #282c34;
@@ -30,4 +35,63 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.titulo{
+  color: #CEC08C !important;
+  font-family: 'Rock Salt', cursive !important;
+  padding-top: 20px;
+  font-size: 35px !important;
+}
+.subtitulo{
+  color: white;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 100px;
+}
+.opacity{
+  height: 110px!important;
+  background-color: #A8BCA1 !important;
+}
+.subtitulo-texto{
+  color: white !important;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 30px;
+}
+.top{
+  background-color: #89A38B;
+  height: 100px;
+}
+.navbar{
+  background-color: #BEEDAA !important;
+}
+.slide{
+  min-height: 600px !important;
+  height: 600px !important;
+  width: 100%;
+}
+.space{
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.semi{
+  width: 100%;
+  height: 600px;
+  border-left: 500px solid #94AE89;
+}
+.final{
+  width: 100%;
+  height: 65px;
+  background-color: #606D29;
+}
+.card{
+  margin-bottom: 50px;
+  padding-top: 50px;
+}
+.card-post{
+  margin-left: 350px;
+  margin-top: 70px;
+}
+.card-title{
+  color: #149E85 !important;
+  font-family: 'Patrick Hand', cursive;
 }

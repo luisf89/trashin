@@ -5,6 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import UIkit from "uikit";
 import Icons from "uikit/dist/js/uikit-icons"
+import 'antd/dist/antd.css'
 import { BrowserRouter} from "react-router-dom"
 
 import "uikit/dist/css/uikit.min.css"

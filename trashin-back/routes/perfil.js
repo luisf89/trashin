@@ -3,10 +3,13 @@ const express = require("express");
 const router = express.Router();
 const authUtils = require("../helpers/auth");
 
-router.patch("/:id", authUtils.verifyToken, (req, res) => {
+router.patch("/:id", (req, res) => {
   const { id } = req.params;
-  const { user } = req.body;
+  let  user  = req.body;
+
+  console.log(req.body)
   //const { _id: author } = req.user;
+  console.log("user", user)
 
   User.findByIdAndUpdate({ _id: id}, { $set: {...user} }, { new: true })
   .then(user => {

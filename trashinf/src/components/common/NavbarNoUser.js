@@ -1,32 +1,35 @@
 import React, {Component} from "react";
 import { Link } from "react-router-dom";
 import { withRouter } from "react-router-dom";
+import img from '../../images/LogoTrashIn.png'
+import './Footer.css'
+
 
 class NavbarNoUser extends Component {
     render() {
       const { location } = this.props;
       return (
-        <nav className="uk-navbar-container navbar" uk-navbar="true">
+        <nav className="nav-m uk-navbar-container uk-navbar-transparent " uk-navbar="true">
           <div className="uk-navbar-left">
-            <ul className="uk-navbar-nav">
+            {/* <ul className="uk-navbar-nav">
               <li className="uk-active">
-                <Link to="/">Inicio</Link>
+                <Link className="uk-navbar-item" to="/">Inicio</Link>
               </li>
               <li>
-                <Link to="/profile">Perfil</Link>
+                <Link className="uk-navbar-item" to="/profile">Perfil</Link>
               </li>
-            </ul>
+            </ul> */}
             
-            <Link className="titulo uk-navbar-item uk-logo uk-navbar-center" to="/">TrashIn</Link>
+            <Link className="titulo uk-navbar-item uk-logo" to="/">TrashIn<img src={img} className="logo" width="50px" height="50px" /></Link>
           </div>
   
           <div className="uk-navbar-right">
             <ul className="uk-navbar-nav">
               <li className="uk-active">
-                <Link to="/signup">Signup</Link>
+                <Link className="uk-navbar-item" to="/register">Signup</Link>
               </li>
               <li>
-                <Link to="/login">Login</Link>
+                <Link className="uk-navbar-item" to="/login">Login</Link>
               </li>
             </ul>
           </div>

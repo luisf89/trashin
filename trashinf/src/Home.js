@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import UIkit from 'uikit';
 import Navbar from "./components/common/Navbar";
 import { Link } from 'react-router-dom';
+import {FooterH} from '../src/components/common/Footer'
+import Quote from "../../trashinf/src/components/home/Quote";
+import {Hw} from '../../trashinf/src/components/home/Hw';
 import img from '../../trashinf/src/images/bellota.jpg'
 import img2 from '../../trashinf/src/images/river.jpg'
 import img3 from '../../trashinf/src/images/air.jpg'
@@ -37,62 +40,81 @@ class Home extends Component{
   render() {
     let {info}= this.state
       return (
-          <div>
-            <Navbar></Navbar>
-            <div className="slide" uk-slideshow="animation: push">
-
-              <div className="uk-position-relative uk-visible-toggle uk-dark" tabIndex="-1">
-
-                  <ul className="uk-slideshow-items slide">
-                      <li>
-                          <img className="slide" src={img3} alt="" uk-cover='true'/>
-                          <div className="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
-                            <br/>
-                            <h1 className="subtitulo" uk-parallax="opacity: 0,8; y: 30,0; viewport: 0.5">Energia Renovable</h1><br/>
-                            <div class="uk-card uk-card-secondary opacity"  uk-parallax="opacity: 0,8; y: 30,0; viewport: 0.5;">
-                              <p className="subtitulo-texto" uk-parallax="opacity: 0,8; y: 30,0; viewport: 0.5;">Nuestro planeta esta en peligro y necesitamos empezar a concientizar a la gente para reutilizar</p>
-                            </div>
-                          </div>
-                      </li>
-                      <li>
-                          <img className="slide" src={img2} alt="" uk-cover='true'/>
-                          <div className="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
-                          <br/>
-                          <br/>
-                            <h1 className="subtitulo" uk-parallax="opacity: 0,8; y: 30,0; viewport: 0.5;">Un Futuro Más Verde</h1><br/>
-                            <div class="uk-card uk-card-secondary opacity"  uk-parallax="opacity: 0,8; y: 30,0; viewport: 0.5;">
-                            <p className="subtitulo-texto" uk-parallax="opacity: 0,8; y: 30,0; viewport: 0.5;">No dejemos que nuestros bosques sean talados, un futuro sin naturaleza es lo que nos espera si no empezamos ya!</p>
-                            </div>
-                          </div>
-                      </li>
-                      <li>
-                          <img className="slide" src={img} alt="" uk-cover='true'/>
-                          <div className="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
-                          <br/>
-                          <br/>
-                            <h1 className="subtitulo" uk-parallax="opacity: 0,8; y: 30,0; viewport: 0.5;">Todos Ayudando a Cambiar</h1><br/>
-                            <div class="uk-card uk-card-secondary opacity"  uk-parallax="opacity: 0,8; y: 30,0; viewport: 0.5;">
-                            <p className="subtitulo-texto" uk-parallax="opacity: 0,8; y: 30,0; viewport: 0.5;">Todos somos responsables de ayudar a contribuir, y en un lugar como la Ciudad de México puede ser muy fácil.</p>
-                            </div>
-                          </div>
-                      </li>
-                  </ul>
-
-                  <a className="uk-position-center-left uk-position-small uk-light uk-hidden-hover" href="#" uk-slidenav-previous='true' uk-slideshow-item="previous"></a>
-                  <a className="uk-position-center-right uk-position-small uk-light uk-hidden-hover" href="#" uk-slidenav-next='true' uk-slideshow-item="next"></a>
-
-              </div>
-            </div>
-            <div className="space uk-child-width-1-4@m uk-flex uk-flex-wrap uk-flex-center ">
-              {info.map((data,i)=> <Cards key={i} {...data}/>)}
+        //   <div>
+        //     <Navbar></Navbar>
+        //     <div className="slide" uk-slideshow="animation: push">
             
-            </div>
-            <div>
-              <img className="semi" src={img7} />
-            </div>
-            <div className="final">
+        //       <div className="uk-position-relative uk-visible-toggle uk-dark" tabIndex="-1">
+              
+        //           <ul className="uk-slideshow-items slide">
+        //               <li>
+                      
+        //                   <img className="slide" src={img3} alt="" uk-cover='true'/>
+        //                   <div className="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+        //                     <br/>
+        //                     <h1 className="subtitulo" uk-parallax="opacity: 0,8; y: 30,0; viewport: 0.5">Energia Renovable</h1><br/>
+        //                     <div class="uk-card uk-card-secondary opacity"  uk-parallax="opacity: 0,8; y: 30,0; viewport: 0.5;">
+        //                       <p className="subtitulo-texto" uk-parallax="opacity: 0,8; y: 30,0; viewport: 0.5;">Nuestro planeta esta en peligro y necesitamos empezar a concientizar a la gente para reutilizar</p>
+        //                     </div>
+        //                   </div>
+        //               </li>
+        //               <li>
+        //                   <img className="slide" src={img2} alt="" uk-cover='true'/>
+        //                   <div className="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+        //                   <br/>
+        //                   <br/>
+        //                     <h1 className="subtitulo" uk-parallax="opacity: 0,8; y: 30,0; viewport: 0.5;">Un Futuro Más Verde</h1><br/>
+        //                     <div class="uk-card uk-card-secondary opacity"  uk-parallax="opacity: 0,8; y: 30,0; viewport: 0.5;">
+        //                     <p className="subtitulo-texto" uk-parallax="opacity: 0,8; y: 30,0; viewport: 0.5;">No dejemos que nuestros bosques sean talados, un futuro sin naturaleza es lo que nos espera si no empezamos ya!</p>
+        //                     </div>
+        //                   </div>
+        //               </li>
+        //               <li>
+        //                   <img className="slide" src={img} alt="" uk-cover='true'/>
+        //                   <div className="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+        //                   <br/>
+        //                   <br/>
+        //                     <h1 className="subtitulo" uk-parallax="opacity: 0,8; y: 30,0; viewport: 0.5;">Todos Ayudando a Cambiar</h1><br/>
+        //                     <div class="uk-card uk-card-secondary opacity"  uk-parallax="opacity: 0,8; y: 30,0; viewport: 0.5;">
+        //                     <p className="subtitulo-texto" uk-parallax="opacity: 0,8; y: 30,0; viewport: 0.5;">Todos somos responsables de ayudar a contribuir, y en un lugar como la Ciudad de México puede ser muy fácil.</p>
+        //                     </div>
+        //                   </div>
+        //               </li>
+        //           </ul>
 
-            </div>
+        //           <a className="uk-position-center-left uk-position-small uk-light uk-hidden-hover" href="#" uk-slidenav-previous='true' uk-slideshow-item="previous"></a>
+        //           <a className="uk-position-center-right uk-position-small uk-light uk-hidden-hover" href="#" uk-slidenav-next='true' uk-slideshow-item="next"></a>
+
+        //       </div>
+        //     </div>
+        //     <div className="space uk-child-width-1-4@m uk-flex uk-flex-wrap uk-flex-center ">
+        //       {info.map((data,i)=> <Cards key={i} {...data}/>)}
+            
+        //     </div>
+        //     <div>
+        //       <img className="semi" src={img7} />
+        //       <p>Contribuye con tu granito de arena</p>
+        //     </div>
+        //     <div className="final">
+
+        //     </div>
+        // </div>
+        <div>
+          <Navbar></Navbar>
+          <div className='header uk-height-large uk-flex uk-flex-left uk-flex-middle uk-background-cover uk-light'
+                     data-src={img3}
+                     data-srcset={img3}
+                     uk-img="true">
+
+
+                    <h1 className="header_text"> TE TOCA DARLE AL MUNDO LO QUE YA TE DIO</h1>
+
+                    <div className='cta_header'>
+                    </div>
+                </div>
+                <Hw/>
+                <Quote/>
+                <FooterH/>
         </div>
       )
   }

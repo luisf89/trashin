@@ -1,0 +1,29 @@
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 320px;
+    align-items: center;
+}
+
+.quote{
+    font-family: Merriweather, serif;
+    font-weight: 900;
+    font-size: 3em;
+    color: #4A537C;
+    align-items: center;
+}
+
+.author{
+    font-family: Lato, sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    width: 830px !important;
+}
+.bg{
+    background-color: #B4E4F2 !important;
+}
+
+img{
+    padding: 20px;
+}

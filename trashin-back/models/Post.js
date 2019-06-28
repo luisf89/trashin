@@ -7,8 +7,16 @@ const postSchema = new Schema (
       type: String,
       required: true
     },
-    imagen: {
+    nombre: {
       type: String
+    },
+    imagen: {
+      type: String,
+      default: "https://i.redd.it/fe24zwdrfwkz.jpg"
+    },
+    commet: {
+      type: Schema.Types.ObjectId,
+      ref: "Comment"
     },
     owner: {
       type: Schema.Types.ObjectId,

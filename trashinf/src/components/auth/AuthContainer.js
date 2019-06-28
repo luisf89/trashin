@@ -27,6 +27,7 @@ class AuthFormContainer extends Component{
             console.log('funcione', token,user)
             localStorage.setItem("TOKEN", token);
             localStorage.setItem("USER", JSON.stringify(user))
+            this.props.history.push("/");
         })
         .catch(err=>console.log('err',err))
       }

@@ -1,0 +1,56 @@
+h2{
+    font-family: Merriweather, serif !important;
+    color: #303A52 !important;
+    font-size: 40px !important;
+    font-weight: 900 !important;
+    margin: 50px !important;
+    letter-spacing: -1.4px;
+}
+
+.project-card{
+    width: 320px !important;
+    margin: 30px;
+}
+
+.cards p{
+    font-family: Lato, sans-serif;
+    margin: 40px !important;
+    margin-left: 80px !important;
+    font-size: 18px;
+}
+
+.cards{
+    font-family: Lato, sans-serif;
+    margin: 40px !important;
+    margin-left: 80px !important;
+    font-size: 18px;
+}
+
+.see-more{
+    color: #13A078;
+    font-family: Lato, sans-serif !important;
+    font-size: 16px !important;
+}
+
+h5{
+    font-family: Lato, sans-serif;
+    margin: 40px !important;
+    margin-left: 80px !important;
+    font-size: 18px;
+}
+
+.align-header{
+    display: flex
+}
+
+.button-update{
+    width:400px;
+    position: absolute;
+    right: 50px;
+    top: 90px;
+    background-color: #07A38B;
+    padding: 10px 70px;
+    text-transform: uppercase !important;
+    font-size: 12px !important;
+    color: white;
+}

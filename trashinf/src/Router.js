@@ -8,11 +8,11 @@ import Principal from '../src/components/common/Principal';
 
 const Router = ({setUser, user}) => (
     <Switch>
-        <Route path="/" render={(props) => <Home user={user} {...props} />} />
-        <Route path="/login" render={(props) => <AuthFormContainer {...props} setUser={setUser} user={user} />} />
-        <Route path="/signup" render={(props) => <SignUpForm {...props} setUser={setUser} user={user} />} />
-        <Route path="/profile" render={(props) => <Profile {...props} setUser={setUser} user={user} />} />
-        <Route path="/principal" render={(props) => <Principal {...props} setUser={setUser} user={user} />} />
+        <Route exact path={"/"} component={Home} />
+        <Route  path={"/login"} component={AuthFormContainer} />
+        <Route  path={"/register"} component={SignUpForm} />
+        <Route  path={"/profile"} component={Profile} />
+        <Route  path={"/principal"} component={Principal} />
     </Switch>
 )
 

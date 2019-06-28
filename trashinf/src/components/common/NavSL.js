@@ -1,6 +1,8 @@
 import React, {Component} from "react";
 import { Link } from "react-router-dom";
 import { withRouter } from "react-router-dom";
+import img from '../../images/LogoTrashIn.png'
+import './Footer.css'
 
 class NavbarNoUser extends Component {
     render() {
@@ -10,11 +12,11 @@ class NavbarNoUser extends Component {
           <div className="uk-navbar-left">
             <ul className="uk-navbar-nav">
               <li className="uk-active">
-                <Link to="/">Inicio</Link>
+                <Link className="blanco" to="/">Inicio</Link>
               </li>
             </ul>
             
-            <Link className="titulo uk-navbar-item uk-logo uk-navbar-center" to="/">TrashIn</Link>
+            <Link className="titulo uk-navbar-item uk-logo uk-navbar-center" to="/">TrashIn<img src={img} width="80px" height="40px" /></Link>
           </div>
         </nav>
       );

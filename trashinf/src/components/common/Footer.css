@@ -1,0 +1,24 @@
+.footer{
+    background-color: #303A52;
+    text-transform: uppercase;
+    line-height: 42px;
+    padding: 40px;
+    padding-left: 80px;
+    height: 28em;
+}
+
+.logomin{
+    margin-left:-40px;
+}
+
+.footer-links li{
+    color: white;
+    font-family: Lato, sans-serif;
+    font-weight: 300 !important;
+    margin: 20px;
+    font-size: 16px;
+}
+.blanco{
+    color: white !important;
+}
+

@@ -3,8 +3,9 @@ const Schema = mongoose.Schema;
 
 const comentSchema = new Schema (
   {
-    coment: {
+    content: {
       type: String,
+      required: true
     },
     owner: {
       type: Schema.Types.ObjectId,

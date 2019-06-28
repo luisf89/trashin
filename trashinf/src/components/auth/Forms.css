@@ -1,0 +1,18 @@
+.nav-bg{
+    background-color: #4A537C !important;
+    height: 700px;
+  }
+.color{
+    color: white;
+}
+.button{
+    margin-top: 20px !important;
+    background-color: #4AE8C5 !important;
+}
+.logo{
+    padding: 0px !important;
+}
+.signup{
+    color: #4AE8C5 !important;
+    font-family: 'Rock Salt', cursive !important;
+}

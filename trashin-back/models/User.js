@@ -6,6 +6,14 @@ const userSchema = new Schema(
     username: {
       type: String,
     },
+    name: {
+      type: String,
+      required: true
+    },
+    lastName:{
+      type: String,
+      required: true
+    },
     photo: {
       type: String,
       default: "https://res.cloudinary.com/dhgfid3ej/image/upload/v1558806718/profileapp/asdsadsa_tuo0fx.jpg"

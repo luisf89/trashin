@@ -28,7 +28,10 @@
     font-weight: 300 !important;
     letter-spacing: 1px;
 }
-
+.text{
+    color: black;
+    font-size: 17px;
+}
 img{
     padding: 20px;
 }

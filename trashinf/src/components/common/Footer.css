@@ -4,7 +4,7 @@
     line-height: 42px;
     padding: 40px;
     padding-left: 80px;
-    height: 28em;
+    height: 31em;
 }
 
 .logomin{
@@ -20,5 +20,8 @@
 }
 .blanco{
     color: white !important;
+}
+.nav-bag{
+    background-color: white !important;
 }
 

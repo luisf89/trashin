@@ -9,7 +9,7 @@ class NavbarWithUser extends Component {
   render() {
     const { location } = this.props;
     return (
-      <nav className="nav-m uk-navbar-container" uk-navbar="true">
+      <nav className="nav-bag nav-m uk-navbar-container" uk-navbar="true">
         <div className="uk-navbar-left">
           <ul className="uk-navbar-nav">
             <li className="uk-active">
@@ -21,13 +21,13 @@ class NavbarWithUser extends Component {
           </ul>
         </div>
 
-        {location.pathname === "/" ? (
+        {/* {location.pathname === "/" ? (
           <div />
-        ) : (
+        ) : ( */}
           <div className="uk-navbar-center">
             <Link className="titulo uk-navbar-item uk-logo" to="/">TrashIn<img src={img} className="logo" width="50px" height="50px" /></Link>
           </div>
-        )}
+        {/* )} */}
 
         <div className="uk-navbar-right">
           <ul className="uk-navbar-nav">

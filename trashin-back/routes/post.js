@@ -21,9 +21,9 @@ router.post('/posting', (req, res) =>{
 })
 
 // get post
-router.get('/postMyPosts:/:id', authUtils.verifyToken, (req, res) =>{
+router.get('/postMyPosts/:id', (req, res) =>{
   const {id} = req.params;
-  Post.find({ author: id })
+  Post.find({ owner: id })
   .then(post =>{
     res.status(200).json({ post });
   })
@@ -36,8 +36,6 @@ router.get('/postMyPosts:/:id', authUtils.verifyToken, (req, res) =>{
 });
 
 router.get("/getAllPosts", (req, res) => {
-
-
   Post.find().populate()
     .then(post => {
       res.status(200).json({ post });
@@ -50,20 +48,20 @@ router.get("/getAllPosts", (req, res) => {
     });
 });
 // get post
-router.get("/:id", authUtils.verifyToken, (req, res) => {
-  const { id } = req.params;
+// router.get("/:id", authUtils.verifyToken, (req, res) => {
+//   const { id } = req.params;
 
-  Post.findById(id)
-    .then(post => {
-      res.status(200).json({ post });
-    })
-    .catch(error => {
-      res.status(404).json({
-        error,
-        message: "Error al buscar el post",
-      });
-    });
-});
+//   Post.findById(id)
+//     .then(post => {
+//       res.status(200).json({ post });
+//     })
+//     .catch(error => {
+//       res.status(404).json({
+//         error,
+//         message: "Error al buscar el post",
+//       });
+//     });
+// });
 
 // create todo
 // router.post("/image", authUtils.verifyToken,uploader.single("image"), (req, res) => {

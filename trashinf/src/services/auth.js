@@ -31,9 +31,9 @@ export const login = auth => {
       throw error.response.data
     })
   }
-  export const getMyPost = (id) => {
-    return axios.get(`${base_url}/post/postMyPosts:/${id}`)
-    .then(res => res.data)
+  export const getMyPosts = (id) => {
+    return axios.get(`${base_url}/post/postMyPosts/${id}`)
+    .then(res => res.data.post)
     .catch(error => {
       throw error.response.data
     })

@@ -1,14 +1,12 @@
 import React, {Component} from "react";
 import {FooterH} from '../common/Footer';
-import {getMyPost} from '../../services/auth';
+import {getMyPosts} from '../../services/auth';
 import {editPerfil} from '../../services/auth';
 import { Link } from "react-router-dom";
 import { withRouter } from "react-router-dom";
 import UIkit from 'uikit';
 import Navbar from "./Navbar";
-import {getAllPosts} from "../../services/auth"
 import './Profile.css'
-import img from '../../images/PP.png'
 import UpdateModal from '../common/user/UpdateModal'
 import {ListProfile} from '../common/user/ListProfile'
 
@@ -40,9 +38,10 @@ class Profile extends Component {
      };
 
     readPost=(post)=>{
-        getMyPost().then(res => {
+        let { _id } = this.state.user
+        getMyPosts(_id).then(res => {
             console.log('ressss',res)
-            this.setState({principals:res.post})
+            this.setState({principals:res})
         }).catch(error=>console.log(error))
     }
 
@@ -64,7 +63,7 @@ class Profile extends Component {
 
     render() {
         const { location } = this.props
-        let {user, principals, modal4Visible} =this.state;
+        let {user, principals, modal4Visible, id} =this.state;
         let {updateProfile , setUser}= this
         console.log('userrrrrr',user)
         return (
@@ -74,16 +73,16 @@ class Profile extends Component {
             <div>
                 <div className="uk-card uk-position-center uk-card-default uk-width-1-2@m">
                     <div className="uk-card-header">
-                        <div className="uk-grid-small uk-flex-middle" uk-grid>
+                        <div className="uk-grid-small uk-flex-middle" uk-grid="true">
                             <div className="uk-width-auto">
                                 <img className="uk-border-circle" width="200" height="200" src={user.photo} />
                             </div>
                         </div>
                     </div>
                         <div className="uk-card-body">
-                            <p>{user.name}</p>
+                            <p className="name">{user.name}</p>
                             <br />
-                            <p>{user.lastName}</p>
+                            <p className="name">{user.lastName}</p>
                     </div>
                 </div>
             </div>

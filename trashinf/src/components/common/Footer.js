@@ -11,8 +11,9 @@ export const FooterH=()=>(
                     <Link to={"/"}><img src={Logo} width="150px" alt="H"/></Link>
                 </div>
                 <div className='footer-links'>
-                    <Link to='/Projects'><li>Signup</li></Link>
-                    <Link to='/About'><li>Login</li></Link>
+                    <Link to="#"><li><span uk-icon="icon: facebook"></span> Facebook</li></Link>
+                    <Link to='#'><li><span uk-icon="icon: twitter"></span> twitter</li></Link>
+                    <Link to='#'><li><span uk-icon="icon: instagram"></span> instagram</li></Link>
                 </div>
             </ul>
         </div>
